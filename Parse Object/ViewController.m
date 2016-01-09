@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getRemoteData];
+    //[self getRemoteData];
+    [self getWeather];
+    [self getMainWeather];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,17 +52,29 @@
         NSString *name                  = ((ZonesObject *)objectResponse.zones[i]).name;
         print(NSLog(@"name = %@", name))
     }
+}
+-(void)getWeather{
+    mjsonWeather = [WebServices getWeather];
+    print(NSLog(@"mjsonWeather = %@", mjsonWeather))
+    WeatherResponse *weatherResponse = [Parser parseWeatherResponse];
     
+    print(NSLog(@"weatherResponse = %@", weatherResponse.base))
+    int size = (int)[weatherResponse.weather count];
+    print(NSLog(@"size = %d",size));
+    NSString *description = ((WeatherObject*) weatherResponse.weather[0]).description_Weather;
+    print(NSLog(@"description = %@",description));
+}
+
+-(void)getMainWeather{
+    mjsonMainWeather = [WebServices getMainWeather];
+    print(NSLog(@"mjsonMainWeather = %@", mjsonMainWeather))
+    MainWeatherResponse *mainweatherResponse = [Parser parseMainWeatherResponse];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    print(NSLog(@"mainweatherResponse = %@", mainweatherResponse.cod))
+    int size = (int)[mainweatherResponse.mainwather count];
+    print(NSLog(@"size = %d",size));
+    NSString *tempmain = ((MainWeatherObject*) mainweatherResponse.mainwather[1]).temp;
+    print(NSLog(@"tempmain = %@",tempmain));
 }
 
 @end

@@ -29,4 +29,29 @@
     }
     return nil;
 }
+
++ (WeatherResponse *)parseWeatherResponse{
+    //check for valid value
+    if(mjsonWeather != nil) {
+        // Using ObjectMapper Directly
+        WeatherResponse *customizedObject = [[ObjectMapper sharedInstance] objectFromSource:mjsonWeather toInstanceOfClass:[WeatherResponse class]];
+        return customizedObject;
+    }
+    return nil;
+}
+
+
++ (MainWeatherResponse *)parseMainWeatherResponse{
+    //check for valid value
+    if(mjsonMainWeather != nil) {
+        // Using ObjectMapper Directly
+        MainWeatherResponse *customizedObject = [[ObjectMapper sharedInstance] objectFromSource:mjsonMainWeather toInstanceOfClass:[MainWeatherResponse class]];
+        return customizedObject;
+    }
+    return nil;
+}
+
+
+
+
 @end

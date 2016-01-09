@@ -8,8 +8,11 @@
 
 #import "Declarations.h"
 
+
 NSDictionary *mjsonRegister;
 NSDictionary *mjsonZones;
+NSDictionary *mjsonWeather;
+NSDictionary *mjsonMainWeather;
 
 @implementation Declarations
 

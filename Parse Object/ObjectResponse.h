@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "ZonesObject.h"
+#import "WeatherObject.h"
+#import "MainWeatherObject.h"
+
 
 @interface ObjectResponse : NSObject
 @property (nonatomic,strong) NSString *responseStatus;

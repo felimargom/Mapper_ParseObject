@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96471EB61C41828700B06B67 /* WeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96471EB51C41828700B06B67 /* WeatherObject.m */; };
+		96471EBA1C4186C800B06B67 /* MainWeatherResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 96471EB91C4186C800B06B67 /* MainWeatherResponse.m */; };
+		96471EBD1C4186E900B06B67 /* MainWeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96471EBC1C4186E900B06B67 /* MainWeatherObject.m */; };
+		969409ED1C4179B000D01413 /* WeatherResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 969409EC1C4179B000D01413 /* WeatherResponse.m */; };
 		D14AC0421C0B459E0079A34A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0411C0B459E0079A34A /* main.m */; };
 		D14AC0451C0B459E0079A34A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0441C0B459E0079A34A /* AppDelegate.m */; };
 		D14AC0481C0B459E0079A34A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14AC0471C0B459E0079A34A /* ViewController.m */; };
@@ -43,6 +47,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96471EB41C41828700B06B67 /* WeatherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherObject.h; sourceTree = "<group>"; };
+		96471EB51C41828700B06B67 /* WeatherObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherObject.m; sourceTree = "<group>"; };
+		96471EB81C4186C800B06B67 /* MainWeatherResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWeatherResponse.h; sourceTree = "<group>"; };
+		96471EB91C4186C800B06B67 /* MainWeatherResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWeatherResponse.m; sourceTree = "<group>"; };
+		96471EBB1C4186E900B06B67 /* MainWeatherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWeatherObject.h; sourceTree = "<group>"; };
+		96471EBC1C4186E900B06B67 /* MainWeatherObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWeatherObject.m; sourceTree = "<group>"; };
+		969409EB1C4179B000D01413 /* WeatherResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherResponse.h; sourceTree = "<group>"; };
+		969409EC1C4179B000D01413 /* WeatherResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherResponse.m; sourceTree = "<group>"; };
 		D14AC03D1C0B459E0079A34A /* Parse Object.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Object.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14AC0411C0B459E0079A34A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D14AC0431C0B459E0079A34A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +136,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96471EB71C4186AA00B06B67 /* MainWeather */ = {
+			isa = PBXGroup;
+			children = (
+				96471EB81C4186C800B06B67 /* MainWeatherResponse.h */,
+				96471EB91C4186C800B06B67 /* MainWeatherResponse.m */,
+				96471EBB1C4186E900B06B67 /* MainWeatherObject.h */,
+				96471EBC1C4186E900B06B67 /* MainWeatherObject.m */,
+			);
+			name = MainWeather;
+			sourceTree = "<group>";
+		};
+		969409EA1C41793000D01413 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				969409EB1C4179B000D01413 /* WeatherResponse.h */,
+				969409EC1C4179B000D01413 /* WeatherResponse.m */,
+				96471EB41C41828700B06B67 /* WeatherObject.h */,
+				96471EB51C41828700B06B67 /* WeatherObject.m */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
 		D14AC0341C0B459E0079A34A = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +336,8 @@
 		D14AC0A51C0B483C0079A34A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				96471EB71C4186AA00B06B67 /* MainWeather */,
+				969409EA1C41793000D01413 /* Weather */,
 				D14AC0B31C0B55D90079A34A /* General */,
 				D14AC0B71C0B59A30079A34A /* Zones */,
 			);
@@ -400,7 +436,9 @@
 				D14AC0481C0B459E0079A34A /* ViewController.m in Sources */,
 				D14AC0451C0B459E0079A34A /* AppDelegate.m in Sources */,
 				D14AC0981C0B478A0079A34A /* SBJsonStreamWriterAccumulator.m in Sources */,
+				969409ED1C4179B000D01413 /* WeatherResponse.m in Sources */,
 				D14AC09E1C0B478A0079A34A /* NSObject+ObjectMapper.m in Sources */,
+				96471EBA1C4186C800B06B67 /* MainWeatherResponse.m in Sources */,
 				D14AC0941C0B478A0079A34A /* SBJsonStreamParserAccumulator.m in Sources */,
 				D14AC0961C0B478A0079A34A /* SBJsonStreamParserState.m in Sources */,
 				D14AC09D1C0B478A0079A34A /* NSDictionary+ObjectMapper.m in Sources */,
@@ -412,6 +450,7 @@
 				D14AC0921C0B478A0079A34A /* SBJsonParser.m in Sources */,
 				D14AC09B1C0B478A0079A34A /* SBJsonUTF8Stream.m in Sources */,
 				D14AC0931C0B478A0079A34A /* SBJsonStreamParser.m in Sources */,
+				96471EB61C41828700B06B67 /* WeatherObject.m in Sources */,
 				D14AC0BA1C0B59B70079A34A /* ZonesObject.m in Sources */,
 				D14AC09A1C0B478A0079A34A /* SBJsonTokeniser.m in Sources */,
 				D14AC0AF1C0B488F0079A34A /* Parser.m in Sources */,
@@ -423,6 +462,7 @@
 				D14AC0971C0B478A0079A34A /* SBJsonStreamWriter.m in Sources */,
 				D14AC0951C0B478A0079A34A /* SBJsonStreamParserAdapter.m in Sources */,
 				D14AC0A41C0B478A0079A34A /* ObjectMappingInfo.m in Sources */,
+				96471EBD1C4186E900B06B67 /* MainWeatherObject.m in Sources */,
 				D14AC0A01C0B478A0079A34A /* ObjectInstanceProvider.m in Sources */,
 				D14AC0B61C0B55F90079A34A /* ObjectResponse.m in Sources */,
 				D14AC09F1C0B478A0079A34A /* ManagedObjectInstanceProvider.m in Sources */,
@@ -574,6 +614,7 @@
 				D14AC0591C0B459E0079A34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
